@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="workshop2.css" />
+  <script src="workshop2.js" defer></script>
+</head>
+<body>
+  <div id="scroll-bar"></div>
+
+  <!-- HERO with video background + NAV -->
+  <header id="hero">
+    <video id="video-background" autoplay loop muted>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <span class="logo">My Portfolio</span>
+
+      <!-- Mobile menu button -->
+      <button id="menu-button" class="menu-toggle" aria-expanded="false">
+        ☰
+      </button>
+
+      <!-- Links -->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero text -->
+    <div class="hero-content">
+      <h1>KHALID RAEEN</h1>
+      <p>Frontend Developer</p>
+      <button id="hero-button">See Projects</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p>Iam Frontend developer.Your friendly neighborhood Frontend Developer.I design, I code, I create the web where creativity meets clean code</p>
+    </section>
+
+    <!-- SKILLS (Flexbox) -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-row">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS (Grid) -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="projects-grid">
+        <article class="project-card">
+          <h3>Project 1</h3>
+          <p>Simple landing page.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project 2</h3>
+          <p>Small JS app.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project 3</h3>
+          <p>Responsive portfolio.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT (form + JS handling) -->
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <form id="contact-form-id">
+        <label for="name">Name (required)</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email (required)</label>
+        <input id="email" name="email" type="email" required />
+
+        <button type="submit">Send</button>
+      </form>
+
+      <div id="form-message"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> Your Name</small>
+  </footer>
+</body>
+</html>
